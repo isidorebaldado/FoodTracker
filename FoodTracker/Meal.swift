@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class Meal: NSObject {
+class Meal: NSObject, NSCoding {
     
     var name: String
     var photo: UIImage?
@@ -65,13 +65,6 @@ class Meal: NSObject {
         self.photo = photo
         self.rating = rating
     }
-    
-}
-
-extension Meal: NSCoding{
-    
-    
-    
     
 }
 
